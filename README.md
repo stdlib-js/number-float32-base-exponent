@@ -24,30 +24,14 @@ limitations under the License.
 
 > Return an integer corresponding to the unbiased exponent of a [single-precision floating-point number][ieee754].
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/number-float32-base-exponent
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var exponentf = require( '@stdlib/number-float32-base-exponent' );
+import exponentf from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float32-base-exponent@deno/mod.js';
 ```
 
 #### exponentf( x )
@@ -55,7 +39,7 @@ var exponentf = require( '@stdlib/number-float32-base-exponent' );
 Returns an `integer` corresponding to the unbiased exponent of a [single-precision floating-point number][ieee754].
 
 ```javascript
-var toFloat32 = require( '@stdlib/number-float64-base-to-float32' );
+import toFloat32 from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-to-float32@deno/mod.js';
 
 var exp = exponentf( toFloat32( 3.14e34 ) ); // => 2^114 ~ 2.08e34
 // returns 114
@@ -84,11 +68,11 @@ exp = exponentf( NaN );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var randu = require( '@stdlib/random-base-randu' );
-var round = require( '@stdlib/math-base-special-round' );
-var pow = require( '@stdlib/math-base-special-pow' );
-var toFloat32 = require( '@stdlib/number-float64-base-to-float32' );
-var exponentf = require( '@stdlib/number-float32-base-exponent' );
+import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
+import round from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-round@deno/mod.js';
+import pow from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-pow@deno/mod.js';
+import toFloat32 from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-to-float32@deno/mod.js';
+import exponentf from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float32-base-exponent@deno/mod.js';
 
 var frac;
 var exp;
@@ -128,7 +112,7 @@ for ( i = 0; i < 100; i++ ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
