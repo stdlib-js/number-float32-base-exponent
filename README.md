@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import exponentf from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float32-base-exponent@esm/index.mjs';
+import exponentf from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float32-base-exponent@v0.1.0-esm/index.mjs';
 ```
 
 #### exponentf( x )
@@ -88,7 +88,7 @@ import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/i
 import round from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-round@esm/index.mjs';
 import pow from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-pow@esm/index.mjs';
 import toFloat32 from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-to-float32@esm/index.mjs';
-import exponentf from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float32-base-exponent@esm/index.mjs';
+import exponentf from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float32-base-exponent@v0.1.0-esm/index.mjs';
 
 var frac;
 var exp;
