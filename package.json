@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/number-float32-base-exponent",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Return an integer corresponding to the unbiased exponent of a single-precision floating-point number.",
   "license": "Apache-2.0",
   "author": {
@@ -41,7 +41,7 @@
   "dependencies": {
     "@stdlib/constants-float32-exponent-bias": "^0.1.1",
     "@stdlib/constants-float32-exponent-mask": "^0.1.1",
-    "@stdlib/number-float32-base-to-word": "^0.1.0",
+    "@stdlib/number-float32-base-to-word": "^0.1.1",
     "@stdlib/utils-library-manifest": "^0.1.1"
   },
   "devDependencies": {
@@ -52,7 +52,7 @@
     "@stdlib/math-base-special-pow": "^0.1.0",
     "@stdlib/math-base-special-round": "^0.1.1",
     "@stdlib/number-float32-base-to-binary-string": "^0.1.0",
-    "@stdlib/number-float64-base-to-float32": "^0.1.0",
+    "@stdlib/number-float64-base-to-float32": "^0.1.1",
     "@stdlib/random-base-randu": "^0.1.0",
     "@stdlib/utils-try-require": "^0.1.1",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
