@@ -214,6 +214,12 @@ int main( void ) {
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/number-float64/base/exponent`][@stdlib/number/float64/base/exponent]</span><span class="delimiter">: </span><span class="description">return an integer corresponding to the unbiased exponent of a double-precision floating-point number.</span>
+
 </section>
 
 <!-- /.related -->
@@ -288,6 +294,12 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/number-float32-base-exponent/main/LICENSE
 
 [ieee754]: https://en.wikipedia.org/wiki/IEEE_754-1985
+
+<!-- <related-links> -->
+
+[@stdlib/number/float64/base/exponent]: https://github.com/stdlib-js/number-float64-base-exponent
+
+<!-- </related-links> -->
 
 </section>
 
