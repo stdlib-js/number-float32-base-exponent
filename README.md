@@ -35,14 +35,30 @@ limitations under the License.
 
 > Return an integer corresponding to the unbiased exponent of a [single-precision floating-point number][ieee754].
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/number-float32-base-exponent
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import exponentf from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float32-base-exponent@esm/index.mjs';
+var exponentf = require( '@stdlib/number-float32-base-exponent' );
 ```
 
 #### exponentf( x )
@@ -50,7 +66,7 @@ import exponentf from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float32-base
 Returns an integer corresponding to the unbiased exponent of a [single-precision floating-point number][ieee754].
 
 ```javascript
-import toFloat32 from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-to-float32@esm/index.mjs';
+var toFloat32 = require( '@stdlib/number-float64-base-to-float32' );
 
 var exp = exponentf( toFloat32( 3.14e34 ) ); // => 2^114 ~ 2.08e34
 // returns 114
@@ -78,17 +94,12 @@ exp = exponentf( NaN );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/index.mjs';
-import round from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-round@esm/index.mjs';
-import pow from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-pow@esm/index.mjs';
-import toFloat32 from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-to-float32@esm/index.mjs';
-import exponentf from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float32-base-exponent@esm/index.mjs';
+```javascript
+var randu = require( '@stdlib/random-base-randu' );
+var round = require( '@stdlib/math-base-special-round' );
+var pow = require( '@stdlib/math-base-special-pow' );
+var toFloat32 = require( '@stdlib/number-float64-base-to-float32' );
+var exponentf = require( '@stdlib/number-float32-base-exponent' );
 
 var frac;
 var exp;
@@ -105,10 +116,6 @@ for ( i = 0; i < 100; i++ ) {
     e = exponentf( x );
     console.log( 'x: %d. unbiased exponent: %d.', x, e );
 }
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -117,11 +124,101 @@ for ( i = 0; i < 100; i++ ) {
 
 <!-- C interface documentation. -->
 
+* * *
 
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/number/float32/base/exponent.h"
+```
+
+#### stdlib_base_float32_exponent( x )
+
+Returns an integer corresponding to the unbiased exponent of a [single-precision floating-point number][ieee754].
+
+```c
+#include <stdint.h>
+
+int32_t out = stdlib_base_float32_exponent( 3.14f );
+```
+
+The function accepts the following arguments:
+
+-   **x**: `[in] float` input value.
+
+```c
+int32_t stdlib_base_float32_exponent( const float x );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/number/float32/base/exponent.h"
+#include <stdint.h>
+#include <stdio.h>
+#include <inttypes.h>
+
+int main( void ) {
+    float x[] = { 4.0f, 0.0f, -0.0f, 1.0f, -1.0f, 3.14f, -3.14f, 1.0e38f, -1.0e38f, 1.0f/0.0f, -1.0f/0.0f, 0.0f/0.0f };
+
+    int32_t out;
+    int i;
+    for ( i = 0; i < 12; i++ ) {
+        out = stdlib_base_float32_exponent( x[ i ] );
+        printf( "%f => out: %" PRId32 "\n", x[ i ], out );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section for related `stdlib` packages. Do not manually edit this section, as it is automatically populated. -->
 
 <section class="related">
+
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/number-float64/base/exponent`][@stdlib/number/float64/base/exponent]</span><span class="delimiter">: </span><span class="description">return an integer corresponding to the unbiased exponent of a double-precision floating-point number.</span>
 
 </section>
 
@@ -136,7 +233,7 @@ for ( i = 0; i < 100; i++ ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -197,6 +294,12 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/number-float32-base-exponent/main/LICENSE
 
 [ieee754]: https://en.wikipedia.org/wiki/IEEE_754-1985
+
+<!-- <related-links> -->
+
+[@stdlib/number/float64/base/exponent]: https://github.com/stdlib-js/number-float64-base-exponent
+
+<!-- </related-links> -->
 
 </section>
 
