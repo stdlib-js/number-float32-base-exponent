@@ -44,6 +44,11 @@ limitations under the License.
 To use in Observable,
 
 ```javascript
+exponentf = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float32-base-exponent@umd/browser.js' )
+```
+The previous example will load the latest bundled code from the umd branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/number-float32-base-exponent/tags). For example,
+
+```javascript
 exponentf = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/number-float32-base-exponent@v0.2.0-umd/browser.js' )
 ```
 
@@ -56,7 +61,7 @@ var exponentf = require( 'path/to/vendor/umd/number-float32-base-exponent/index.
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/number-float32-base-exponent@v0.2.0-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/number-float32-base-exponent@umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -110,7 +115,7 @@ exp = exponentf( NaN );
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-round@umd/browser.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-pow@umd/browser.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/number-float64-base-to-float32@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/number-float32-base-exponent@v0.2.0-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/number-float32-base-exponent@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 
