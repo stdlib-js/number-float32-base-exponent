@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-09-14)
+## Unreleased (2026-01-26)
 
 <section class="issues">
 
@@ -24,12 +24,13 @@ A total of 2 issues were closed in this release:
 
 <details>
 
+-   [`56a8646`](https://github.com/stdlib-js/stdlib/commit/56a864622858956ca75eb8a2af74e81b827115e7) - **bench:** refactor to use string interpolation in `number/float32/base` [(#9907)](https://github.com/stdlib-js/stdlib/pull/9907) _(by Lokesh Ranjan)_
 -   [`63ca7e4`](https://github.com/stdlib-js/stdlib/commit/63ca7e473044990d355b5e7e1e991b66be7ac411) - **style:** add empty lines _(by Athan Reines)_
 -   [`21ec206`](https://github.com/stdlib-js/stdlib/commit/21ec2060d7496322ce32d4f984230d0c131974cc) - **docs:** clean-up example code _(by Philipp Burckhardt)_
 -   [`11581aa`](https://github.com/stdlib-js/stdlib/commit/11581aaca8c3cb824cbb92c0c0f80e76890bdb20) - **test:** use standardized assertion messages and fix lint errors _(by Philipp Burckhardt)_
 -   [`7483bef`](https://github.com/stdlib-js/stdlib/commit/7483bef13b1d3241347266d25a02957269419825) - **test:** use .strictEqual() instead of .equal() _(by Philipp Burckhardt)_
 -   [`7513cfe`](https://github.com/stdlib-js/stdlib/commit/7513cfee4cc2404b62615c9c9be7c882396e0b39) - **chore:** fix JavaScript lint errors [(#7047)](https://github.com/stdlib-js/stdlib/pull/7047) _(by Uday Kakade, Athan Reines)_
--   [`66f68cf`](https://github.com/stdlib-js/stdlib/commit/66f68cf6493c41ccfe4107e76d04a6bc43769b63) - **chore:** fix EditorConfig lint errors [(#6871)](https://github.com/stdlib-js/stdlib/pull/6871) _(by zhanggy)_
+-   [`66f68cf`](https://github.com/stdlib-js/stdlib/commit/66f68cf6493c41ccfe4107e76d04a6bc43769b63) - **chore:** fix EditorConfig lint errors [(#6871)](https://github.com/stdlib-js/stdlib/pull/6871) _(by Geo Daoyu)_
 -   [`a72a67a`](https://github.com/stdlib-js/stdlib/commit/a72a67a667bcf694e5f8f2bc3c8e62714e5832bc) - **chore:** minor clean-up _(by Philipp Burckhardt)_
 -   [`272ae7a`](https://github.com/stdlib-js/stdlib/commit/272ae7ac5c576c68cfab1b6e304c86407faa20cd) - **docs:** remove comment _(by Athan Reines)_
 -   [`2777e4b`](https://github.com/stdlib-js/stdlib/commit/2777e4be161869d09406e3b17947d24c64b47af2) - **bench:** resolve lint errors in benchmarks _(by Athan Reines)_
@@ -44,12 +45,13 @@ A total of 2 issues were closed in this release:
 
 ### Contributors
 
-A total of 4 people contributed to this release. Thank you to the following contributors:
+A total of 5 people contributed to this release. Thank you to the following contributors:
 
 -   Athan Reines
+-   Geo Daoyu
+-   Lokesh Ranjan
 -   Philipp Burckhardt
 -   Uday Kakade
--   zhanggy
 
 </section>
 
